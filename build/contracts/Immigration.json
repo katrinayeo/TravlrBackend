@@ -152,9 +152,9 @@
           "type": "uint8"
         },
         {
-          "internalType": "uint256",
+          "internalType": "uint8",
           "name": "_temp",
-          "type": "uint256"
+          "type": "uint8"
         }
       ],
       "name": "updateEthPassport",
@@ -164,25 +164,25 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"logmessage\",\"type\":\"string\"}],\"name\":\"logmessage\",\"type\":\"event\"},{\"constant\":true,\"inputs\":[],\"name\":\"getCountry\",\"outputs\":[{\"internalType\":\"uint16\",\"name\":\"\",\"type\":\"uint16\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getParentAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"government\",\"outputs\":[{\"internalType\":\"contract Government\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"isOwner\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"_ethPassportAddress\",\"type\":\"address\"},{\"internalType\":\"enum EthPassport.Direction\",\"name\":\"_direction\",\"type\":\"uint8\"},{\"internalType\":\"uint256\",\"name\":\"_temp\",\"type\":\"uint256\"}],\"name\":\"updateEthPassport\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{\"isOwner()\":{\"details\":\"Returns true if the caller is the current owner.\"},\"owner()\":{\"details\":\"Returns the address of the current owner.\"},\"renounceOwnership()\":{\"details\":\"Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner.     * NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner.\"},\"transferOwnership(address)\":{\"details\":\"Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner.\"}}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/katrina/Desktop/IS4302/Project/TravlrBackend/contracts/Immigration.sol\":\"Immigration\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/katrina/Desktop/IS4302/Project/TravlrBackend/contracts/EthPassport.sol\":{\"keccak256\":\"0xd8abc36ae38194cf56f7bd8597c72cfb5ec6dcffbefd947a94c9459991778396\",\"urls\":[\"bzz-raw://8ed4dbd3385c0b3c68cc251b4af134df2d929a729a297d7506b11f05e5ddc41e\",\"dweb:/ipfs/QmS49o9YkEF628LpHXV3hxBPwAg7vrg1k6BKyHq3GRF61n\"]},\"/Users/katrina/Desktop/IS4302/Project/TravlrBackend/contracts/Government.sol\":{\"keccak256\":\"0xc48c3f10c31a7a14348921b5add484fc46e071de1ef68ee107a2ab166a8af7c5\",\"urls\":[\"bzz-raw://449e02fda41eff8462898fbd1b23a868c81d4ca41912ee532fe1dcd19841cfdc\",\"dweb:/ipfs/QmS6Lq7ySVzC7FXByzAf6sjABhXkLJQGRy9yEE2D5bmAp4\"]},\"/Users/katrina/Desktop/IS4302/Project/TravlrBackend/contracts/Hotel.sol\":{\"keccak256\":\"0x41b5659f4575bf6f6f0e41b18df4596ac1738c48bf18b98a8aee6565ff98c242\",\"urls\":[\"bzz-raw://e333f4f49463bdcc841bd2b4c2c5bea45c817e3c896ea3cef71b8dc38693c317\",\"dweb:/ipfs/QmPn6sVQ8Y7dXdzjkBGeLZ1T7J7hVoARwwRQKfxmLm2sso\"]},\"/Users/katrina/Desktop/IS4302/Project/TravlrBackend/contracts/Immigration.sol\":{\"keccak256\":\"0x9c7c5d58555db699b38dc1e5dca4a9151d3361f2020132d480cee29a0dace286\",\"urls\":[\"bzz-raw://5b3cbf577e6d0a920a81205c28c442ea5c41cffc7a977b4a123bcd7d3f8a165e\",\"dweb:/ipfs/QmNT7teUjJkWx8D3NJtnXs6h3GAEkvFm1LdpypdAvuj8Vw\"]},\"/Users/katrina/Desktop/IS4302/Project/TravlrBackend/contracts/Travlr.sol\":{\"keccak256\":\"0x9ddafa3b132bbc6374fb2a714f5d8ea5dab87027a083403f897751a8a413ac73\",\"urls\":[\"bzz-raw://5bf17d7424979468183c877c90fb40c787541db4e51b7aac75b555b3a5255908\",\"dweb:/ipfs/QmXG3Ka6quFCeszm8w1h2t8o2xovo2NaRgtuUyRUmpkoMR\"]},\"/Users/katrina/Desktop/IS4302/Project/TravlrBackend/node_modules/@openzeppelin/contracts/GSN/Context.sol\":{\"keccak256\":\"0x90a3995645af7562d84b9d69363ffa5ae7217714ab61e951bf7bc450f40e4061\",\"urls\":[\"bzz-raw://216ef9d6b614db4eb46970b4e84903f2534a45572dd30a79f0041f1a5830f436\",\"dweb:/ipfs/QmNPrJ4MWKUAWzKXpUqeyKRUfosaoANZAqXgvepdrCwZAG\"]},\"/Users/katrina/Desktop/IS4302/Project/TravlrBackend/node_modules/@openzeppelin/contracts/access/Roles.sol\":{\"keccak256\":\"0xb002c378d7b82a101bd659c341518953ca0919d342c0a400196982c0e7e7bcdb\",\"urls\":[\"bzz-raw://00a788c4631466c220b385bdd100c571d24b2deccd657615cfbcef6cadf669a4\",\"dweb:/ipfs/QmTEwDbjJNxmMNCDMqtuou3dyM8Wtp8Q9NFvn7SAVM7Jf3\"]},\"/Users/katrina/Desktop/IS4302/Project/TravlrBackend/node_modules/@openzeppelin/contracts/ownership/Ownable.sol\":{\"keccak256\":\"0x6fb9d7889769d7cc161225f9ef7a90e468ba9788b253816f8d8b6894d3472c24\",\"urls\":[\"bzz-raw://cf4c00fc3c37cc5acf0c82ec6fd97bab67d72c2567fdc0ebf023d9c09b30a08e\",\"dweb:/ipfs/Qmb7TChG6DsEDX7LooJ4vmxot19f7VXX8S1zUGPeJTWbwZ\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b50600061002161011260201b60201c565b9050806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055508073ffffffffffffffffffffffffffffffffffffffff16600073ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a3506100cd61011a60201b60201c565b600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550610143565b600033905090565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b610837806101526000396000f3fe608060405234801561001057600080fd5b50600436106100885760003560e01c806391fa05551161005b57806391fa05551461014d5780639e0c3ead14610197578063a0c40648146101bd578063f2fde38b1461021857610088565b80632672f5261461008d578063715018a6146100d75780638da5cb5b146100e15780638f32d59b1461012b575b600080fd5b61009561025c565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6100df610282565b005b6100e96103bb565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6101336103e4565b604051808215151515815260200191505060405180910390f35b610155610442565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b61019f61046c565b604051808261ffff1661ffff16815260200191505060405180910390f35b610216600480360360608110156101d357600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803560ff16906020019092919080359060200190929190505050610516565b005b61025a6004803603602081101561022e57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061060a565b005b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b61028a6103e4565b6102fc576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657281525060200191505060405180910390fd5b600073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a360008060006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16610426610690565b73ffffffffffffffffffffffffffffffffffffffff1614905090565b6000600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b6000600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16639e0c3ead6040518163ffffffff1660e01b815260040160206040518083038186803b1580156104d657600080fd5b505afa1580156104ea573d6000803e3d6000fd5b505050506040513d602081101561050057600080fd5b8101908080519060200190929190505050905090565b60008390508073ffffffffffffffffffffffffffffffffffffffff166363f1209184846040518363ffffffff1660e01b81526004018083600381111561055857fe5b60ff16815260200182815260200192505050600060405180830381600087803b15801561058457600080fd5b505af1158015610598573d6000803e3d6000fd5b505050507fd65613229dcae2ab4fe4ed0ef284e79c2cce44ad528ba81c620b7bb29ce7ce196040518080602001828103825260148152602001807f4574682050617373706f7274205570646174656400000000000000000000000081525060200191505060405180910390a150505050565b6106126103e4565b610684576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657281525060200191505060405180910390fd5b61068d81610698565b50565b600033905090565b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff16141561071e576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260268152602001806107dd6026913960400191505060405180910390fd5b8073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a3806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505056fe4f776e61626c653a206e6577206f776e657220697320746865207a65726f2061646472657373a265627a7a723158202a69db1e514b270fe16e667838ce22d532c1150bd2d7dcc3b6d61a4c9fc7d0b164736f6c63430005100032",
-  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100885760003560e01c806391fa05551161005b57806391fa05551461014d5780639e0c3ead14610197578063a0c40648146101bd578063f2fde38b1461021857610088565b80632672f5261461008d578063715018a6146100d75780638da5cb5b146100e15780638f32d59b1461012b575b600080fd5b61009561025c565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6100df610282565b005b6100e96103bb565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6101336103e4565b604051808215151515815260200191505060405180910390f35b610155610442565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b61019f61046c565b604051808261ffff1661ffff16815260200191505060405180910390f35b610216600480360360608110156101d357600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803560ff16906020019092919080359060200190929190505050610516565b005b61025a6004803603602081101561022e57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061060a565b005b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b61028a6103e4565b6102fc576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657281525060200191505060405180910390fd5b600073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a360008060006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16610426610690565b73ffffffffffffffffffffffffffffffffffffffff1614905090565b6000600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b6000600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16639e0c3ead6040518163ffffffff1660e01b815260040160206040518083038186803b1580156104d657600080fd5b505afa1580156104ea573d6000803e3d6000fd5b505050506040513d602081101561050057600080fd5b8101908080519060200190929190505050905090565b60008390508073ffffffffffffffffffffffffffffffffffffffff166363f1209184846040518363ffffffff1660e01b81526004018083600381111561055857fe5b60ff16815260200182815260200192505050600060405180830381600087803b15801561058457600080fd5b505af1158015610598573d6000803e3d6000fd5b505050507fd65613229dcae2ab4fe4ed0ef284e79c2cce44ad528ba81c620b7bb29ce7ce196040518080602001828103825260148152602001807f4574682050617373706f7274205570646174656400000000000000000000000081525060200191505060405180910390a150505050565b6106126103e4565b610684576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657281525060200191505060405180910390fd5b61068d81610698565b50565b600033905090565b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff16141561071e576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260268152602001806107dd6026913960400191505060405180910390fd5b8073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a3806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505056fe4f776e61626c653a206e6577206f776e657220697320746865207a65726f2061646472657373a265627a7a723158202a69db1e514b270fe16e667838ce22d532c1150bd2d7dcc3b6d61a4c9fc7d0b164736f6c63430005100032",
-  "sourceMap": "253:864:3:-;;;444:165;8:9:-1;5:2;;;30:1;27;20:12;5:2;444:165:3;698:17:8;718:12;:10;;;:12;;:::i;:::-;698:32;;749:9;740:6;;:18;;;;;;;;;;;;;;;;;;806:9;773:43;;802:1;773:43;;;;;;;;;;;;664:159;595:7:3;:5;;;:7;;:::i;:::-;571:10;;:32;;;;;;;;;;;;;;;;;;253:864;;788:96:6;833:15;867:10;860:17;;788:96;:::o;899:77:8:-;937:7;963:6;;;;;;;;;;;956:13;;899:77;:::o;253:864:3:-;;;;;;;",
-  "deployedSourceMap": "253:864:3:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;253:864:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;296:28;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;1684:137:8;;;:::i;:::-;;899:77;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;1250:92;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;617:97:3;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;722:95;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;825:289;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;825:289:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;1970:107:8;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1970:107:8;;;;;;;;;;;;;;;;;;;:::i;:::-;;296:28:3;;;;;;;;;;;;;:::o;1684:137:8:-;1103:9;:7;:9::i;:::-;1095:54;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1782:1;1745:40;;1766:6;;;;;;;;;;;1745:40;;;;;;;;;;;;1812:1;1795:6;;:19;;;;;;;;;;;;;;;;;;1684:137::o;899:77::-;937:7;963:6;;;;;;;;;;;956:13;;899:77;:::o;1250:92::-;1290:4;1329:6;;;;;;;;;;;1313:22;;:12;:10;:12::i;:::-;:22;;;1306:29;;1250:92;:::o;617:97:3:-;666:7;697:10;;;;;;;;;;;682:26;;617:97;:::o;722:95::-;765:6;788:10;;;;;;;;;;;:21;;;:23;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;788:23:3;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;788:23:3;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;788:23:3;;;;;;;;;;;;;;;;781:30;;722:95;:::o;825:289::-;943:23;981:19;943:58;;1010:11;:31;;;1042:10;1054:5;1010:50;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1010:50:3;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;1010:50:3;;;;1074:34;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;825:289;;;;:::o;1970:107:8:-;1103:9;:7;:9::i;:::-;1095:54;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2042:28;2061:8;2042:18;:28::i;:::-;1970:107;:::o;788:96:6:-;833:15;867:10;860:17;;788:96;:::o;2178:225:8:-;2271:1;2251:22;;:8;:22;;;;2243:73;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2360:8;2331:38;;2352:6;;;;;;;;;;;2331:38;;;;;;;;;;;;2388:8;2379:6;;:17;;;;;;;;;;;;;;;;;;2178:225;:::o",
-  "source": "pragma solidity ^0.5.0;\r\nimport \"../node_modules/@openzeppelin/contracts/access/Roles.sol\";\r\nimport \"../node_modules/@openzeppelin/contracts/ownership/Ownable.sol\";\r\n\r\nimport \"./Travlr.sol\";\r\nimport \"./Government.sol\";\r\nimport \"./EthPassport.sol\";\r\n\r\n\r\ncontract Immigration is Ownable {\r\n    \r\n  Government public government;\r\n  //implemented in constructor later\r\n  uint256 lat;\r\n  uint256 long;\r\n  event logmessage(string logmessage);\r\n  \r\n  constructor () public {\r\n    //makes parent the first owner who created the contract not new owner who took over contract\r\n    government = Government(owner());\r\n  }\r\n  \r\n  function getParentAddress() public view returns (address) {\r\n    return address(government);\r\n  }\r\n  \r\n  function getCountry() public view returns (uint16){\r\n      return government.getCountry();\r\n  }\r\n  \r\n  function updateEthPassport(address _ethPassportAddress, EthPassport.Direction _direction, uint _temp) public {\r\n      EthPassport ethPassport = EthPassport(_ethPassportAddress);\r\n      ethPassport.updateTravelHistory(_direction, _temp);\r\n      emit logmessage(\"Eth Passport Updated\");\r\n  }\r\n}",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"logmessage\",\"type\":\"string\"}],\"name\":\"logmessage\",\"type\":\"event\"},{\"constant\":true,\"inputs\":[],\"name\":\"getCountry\",\"outputs\":[{\"internalType\":\"uint16\",\"name\":\"\",\"type\":\"uint16\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getParentAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"government\",\"outputs\":[{\"internalType\":\"contract Government\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"isOwner\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"_ethPassportAddress\",\"type\":\"address\"},{\"internalType\":\"enum EthPassport.Direction\",\"name\":\"_direction\",\"type\":\"uint8\"},{\"internalType\":\"uint8\",\"name\":\"_temp\",\"type\":\"uint8\"}],\"name\":\"updateEthPassport\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{\"isOwner()\":{\"details\":\"Returns true if the caller is the current owner.\"},\"owner()\":{\"details\":\"Returns the address of the current owner.\"},\"renounceOwnership()\":{\"details\":\"Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner.     * NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner.\"},\"transferOwnership(address)\":{\"details\":\"Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner.\"}}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/katrina/Desktop/IS4302/Project/TravlrBackend/contracts/Immigration.sol\":\"Immigration\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/katrina/Desktop/IS4302/Project/TravlrBackend/contracts/EthPassport.sol\":{\"keccak256\":\"0xb0b4312bf6d9143843ad53a12ceb2a4f5a01cda278b5303efdbc62b88623ca7e\",\"urls\":[\"bzz-raw://bf8ab7883d4a8e8f6ef7d4d8315b473cd334cf12d6129050e8fc3674261cd990\",\"dweb:/ipfs/QmTs8zSxyxGweN63rZ2Vi63UEjQpWrfVqNFaCyeaWoiKRw\"]},\"/Users/katrina/Desktop/IS4302/Project/TravlrBackend/contracts/Government.sol\":{\"keccak256\":\"0x6d7df401999db36d5ac1b5e6c25478c5925f6e18c60a384e1044fb45f3d469d3\",\"urls\":[\"bzz-raw://01d979e8cf04550bfdbbd78b8d77da58fe6e7b7062682c2a0133b88ba5746007\",\"dweb:/ipfs/QmUNoC2Jfs7zDtHzZUVHwHMnryCc5bEXfZBApQet26gTyn\"]},\"/Users/katrina/Desktop/IS4302/Project/TravlrBackend/contracts/Hotel.sol\":{\"keccak256\":\"0xf7a7292e382133b6334f2482a42a3f46d9b15443a7c8a747cbf656bdf653b856\",\"urls\":[\"bzz-raw://faffddb8c686dbe2c600cb3958f984ee9992e185be484d776196048beff2afdb\",\"dweb:/ipfs/QmUzWTKjumkxgDMs51JipJfaTcvAwuBFriz1ru5G2jDUcM\"]},\"/Users/katrina/Desktop/IS4302/Project/TravlrBackend/contracts/Immigration.sol\":{\"keccak256\":\"0x37ea4e3e6d9ef99e6647e0bcd2c87649a8c36ae1e71f84bf548ea520ecf545a4\",\"urls\":[\"bzz-raw://b220657edfc433abfd8e6dae8f0f41375b912b0c7807c98e3b90f23553e2190f\",\"dweb:/ipfs/QmXWTwDaavUTwZ9oVCLyisLhPPmgbgkfvzaAyBDJpjkG4w\"]},\"/Users/katrina/Desktop/IS4302/Project/TravlrBackend/contracts/Travlr.sol\":{\"keccak256\":\"0xe6593b081f9186d9033886948be7ffbfe583f9e3713be681cbfdfeaece1a2a6d\",\"urls\":[\"bzz-raw://57d2576eb8cb5a44659d09101a75b2a16862308ffcac28ec73047236708bde7f\",\"dweb:/ipfs/Qmf3ftGLaiP8YGujWnMqkwgVpCQKMcPqmVBVwqbmtfdgNo\"]},\"/Users/katrina/Desktop/IS4302/Project/TravlrBackend/node_modules/@openzeppelin/contracts/GSN/Context.sol\":{\"keccak256\":\"0x90a3995645af7562d84b9d69363ffa5ae7217714ab61e951bf7bc450f40e4061\",\"urls\":[\"bzz-raw://216ef9d6b614db4eb46970b4e84903f2534a45572dd30a79f0041f1a5830f436\",\"dweb:/ipfs/QmNPrJ4MWKUAWzKXpUqeyKRUfosaoANZAqXgvepdrCwZAG\"]},\"/Users/katrina/Desktop/IS4302/Project/TravlrBackend/node_modules/@openzeppelin/contracts/access/Roles.sol\":{\"keccak256\":\"0xb002c378d7b82a101bd659c341518953ca0919d342c0a400196982c0e7e7bcdb\",\"urls\":[\"bzz-raw://00a788c4631466c220b385bdd100c571d24b2deccd657615cfbcef6cadf669a4\",\"dweb:/ipfs/QmTEwDbjJNxmMNCDMqtuou3dyM8Wtp8Q9NFvn7SAVM7Jf3\"]},\"/Users/katrina/Desktop/IS4302/Project/TravlrBackend/node_modules/@openzeppelin/contracts/ownership/Ownable.sol\":{\"keccak256\":\"0x6fb9d7889769d7cc161225f9ef7a90e468ba9788b253816f8d8b6894d3472c24\",\"urls\":[\"bzz-raw://cf4c00fc3c37cc5acf0c82ec6fd97bab67d72c2567fdc0ebf023d9c09b30a08e\",\"dweb:/ipfs/Qmb7TChG6DsEDX7LooJ4vmxot19f7VXX8S1zUGPeJTWbwZ\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50600061002161011260201b60201c565b9050806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055508073ffffffffffffffffffffffffffffffffffffffff16600073ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a3506100cd61011a60201b60201c565b600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550610143565b600033905090565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b610840806101526000396000f3fe608060405234801561001057600080fd5b50600436106100885760003560e01c806391fa05551161005b57806391fa05551461014d5780639e0c3ead14610197578063d70408bb146101bd578063f2fde38b1461021b57610088565b80632672f5261461008d578063715018a6146100d75780638da5cb5b146100e15780638f32d59b1461012b575b600080fd5b61009561025f565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6100df610285565b005b6100e96103be565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6101336103e7565b604051808215151515815260200191505060405180910390f35b610155610445565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b61019f61046f565b604051808261ffff1661ffff16815260200191505060405180910390f35b610219600480360360608110156101d357600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803560ff169060200190929190803560ff169060200190929190505050610519565b005b61025d6004803603602081101561023157600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610613565b005b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b61028d6103e7565b6102ff576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657281525060200191505060405180910390fd5b600073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a360008060006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16610429610699565b73ffffffffffffffffffffffffffffffffffffffff1614905090565b6000600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b6000600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16639e0c3ead6040518163ffffffff1660e01b815260040160206040518083038186803b1580156104d957600080fd5b505afa1580156104ed573d6000803e3d6000fd5b505050506040513d602081101561050357600080fd5b8101908080519060200190929190505050905090565b60008390508073ffffffffffffffffffffffffffffffffffffffff16633a4edce284846040518363ffffffff1660e01b81526004018083600381111561055b57fe5b60ff1681526020018260ff1660ff16815260200192505050600060405180830381600087803b15801561058d57600080fd5b505af11580156105a1573d6000803e3d6000fd5b505050507fd65613229dcae2ab4fe4ed0ef284e79c2cce44ad528ba81c620b7bb29ce7ce196040518080602001828103825260148152602001807f4574682050617373706f7274205570646174656400000000000000000000000081525060200191505060405180910390a150505050565b61061b6103e7565b61068d576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657281525060200191505060405180910390fd5b610696816106a1565b50565b600033905090565b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff161415610727576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260268152602001806107e66026913960400191505060405180910390fd5b8073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a3806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505056fe4f776e61626c653a206e6577206f776e657220697320746865207a65726f2061646472657373a265627a7a72315820560b7557ac4bd219282f7f8f19311b55614185830dab385f9bc3d5b53184292664736f6c63430005100032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100885760003560e01c806391fa05551161005b57806391fa05551461014d5780639e0c3ead14610197578063d70408bb146101bd578063f2fde38b1461021b57610088565b80632672f5261461008d578063715018a6146100d75780638da5cb5b146100e15780638f32d59b1461012b575b600080fd5b61009561025f565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6100df610285565b005b6100e96103be565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6101336103e7565b604051808215151515815260200191505060405180910390f35b610155610445565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b61019f61046f565b604051808261ffff1661ffff16815260200191505060405180910390f35b610219600480360360608110156101d357600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803560ff169060200190929190803560ff169060200190929190505050610519565b005b61025d6004803603602081101561023157600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610613565b005b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b61028d6103e7565b6102ff576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657281525060200191505060405180910390fd5b600073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a360008060006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16610429610699565b73ffffffffffffffffffffffffffffffffffffffff1614905090565b6000600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b6000600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16639e0c3ead6040518163ffffffff1660e01b815260040160206040518083038186803b1580156104d957600080fd5b505afa1580156104ed573d6000803e3d6000fd5b505050506040513d602081101561050357600080fd5b8101908080519060200190929190505050905090565b60008390508073ffffffffffffffffffffffffffffffffffffffff16633a4edce284846040518363ffffffff1660e01b81526004018083600381111561055b57fe5b60ff1681526020018260ff1660ff16815260200192505050600060405180830381600087803b15801561058d57600080fd5b505af11580156105a1573d6000803e3d6000fd5b505050507fd65613229dcae2ab4fe4ed0ef284e79c2cce44ad528ba81c620b7bb29ce7ce196040518080602001828103825260148152602001807f4574682050617373706f7274205570646174656400000000000000000000000081525060200191505060405180910390a150505050565b61061b6103e7565b61068d576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657281525060200191505060405180910390fd5b610696816106a1565b50565b600033905090565b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff161415610727576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260268152602001806107e66026913960400191505060405180910390fd5b8073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a3806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505056fe4f776e61626c653a206e6577206f776e657220697320746865207a65726f2061646472657373a265627a7a72315820560b7557ac4bd219282f7f8f19311b55614185830dab385f9bc3d5b53184292664736f6c63430005100032",
+  "sourceMap": "253:857:3:-;;;444:165;8:9:-1;5:2;;;30:1;27;20:12;5:2;444:165:3;698:17:8;718:12;:10;;;:12;;:::i;:::-;698:32;;749:9;740:6;;:18;;;;;;;;;;;;;;;;;;806:9;773:43;;802:1;773:43;;;;;;;;;;;;664:159;595:7:3;:5;;;:7;;:::i;:::-;571:10;;:32;;;;;;;;;;;;;;;;;;253:857;;788:96:6;833:15;867:10;860:17;;788:96;:::o;899:77:8:-;937:7;963:6;;;;;;;;;;;956:13;;899:77;:::o;253:857:3:-;;;;;;;",
+  "deployedSourceMap": "253:857:3:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;253:857:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;296:28;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;1684:137:8;;;:::i;:::-;;899:77;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;1250:92;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;617:97:3;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;722:93;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;823:284;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;823:284:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;1970:107:8;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1970:107:8;;;;;;;;;;;;;;;;;;;:::i;:::-;;296:28:3;;;;;;;;;;;;;:::o;1684:137:8:-;1103:9;:7;:9::i;:::-;1095:54;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1782:1;1745:40;;1766:6;;;;;;;;;;;1745:40;;;;;;;;;;;;1812:1;1795:6;;:19;;;;;;;;;;;;;;;;;;1684:137::o;899:77::-;937:7;963:6;;;;;;;;;;;956:13;;899:77;:::o;1250:92::-;1290:4;1329:6;;;;;;;;;;;1313:22;;:12;:10;:12::i;:::-;:22;;;1306:29;;1250:92;:::o;617:97:3:-;666:7;697:10;;;;;;;;;;;682:26;;617:97;:::o;722:93::-;765:6;786:10;;;;;;;;;;;:21;;;:23;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;786:23:3;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;786:23:3;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;786:23:3;;;;;;;;;;;;;;;;779:30;;722:93;:::o;823:284::-;940:23;978:19;940:58;;1005:11;:31;;;1037:10;1049:5;1005:50;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1005:50:3;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;1005:50:3;;;;1067:34;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;823:284;;;;:::o;1970:107:8:-;1103:9;:7;:9::i;:::-;1095:54;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2042:28;2061:8;2042:18;:28::i;:::-;1970:107;:::o;788:96:6:-;833:15;867:10;860:17;;788:96;:::o;2178:225:8:-;2271:1;2251:22;;:8;:22;;;;2243:73;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2360:8;2331:38;;2352:6;;;;;;;;;;;2331:38;;;;;;;;;;;;2388:8;2379:6;;:17;;;;;;;;;;;;;;;;;;2178:225;:::o",
+  "source": "pragma solidity ^0.5.0;\r\nimport \"../node_modules/@openzeppelin/contracts/access/Roles.sol\";\r\nimport \"../node_modules/@openzeppelin/contracts/ownership/Ownable.sol\";\r\n\r\nimport \"./Travlr.sol\";\r\nimport \"./Government.sol\";\r\nimport \"./EthPassport.sol\";\r\n\r\n\r\ncontract Immigration is Ownable {\r\n    \r\n  Government public government;\r\n  //implemented in constructor later\r\n  uint256 lat;\r\n  uint256 long;\r\n  event logmessage(string logmessage);\r\n  \r\n  constructor () public {\r\n    //makes parent the first owner who created the contract not new owner who took over contract\r\n    government = Government(owner());\r\n  }\r\n  \r\n  function getParentAddress() public view returns (address) {\r\n    return address(government);\r\n  }\r\n  \r\n  function getCountry() public view returns (uint16){\r\n    return government.getCountry();\r\n  }\r\n  \r\n  function updateEthPassport(address _ethPassportAddress, EthPassport.Direction _direction, uint8 _temp) public {\r\n    EthPassport ethPassport = EthPassport(_ethPassportAddress);\r\n    ethPassport.updateTravelHistory(_direction, _temp);\r\n    emit logmessage(\"Eth Passport Updated\");\r\n  }\r\n}",
   "sourcePath": "/Users/katrina/Desktop/IS4302/Project/TravlrBackend/contracts/Immigration.sol",
   "ast": {
     "absolutePath": "/Users/katrina/Desktop/IS4302/Project/TravlrBackend/contracts/Immigration.sol",
     "exportedSymbols": {
       "Immigration": [
-        551
+        683
       ]
     },
-    "id": 552,
+    "id": 684,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 475,
+        "id": 607,
         "literals": [
           "solidity",
           "^",
@@ -195,10 +195,10 @@
       {
         "absolutePath": "/Users/katrina/Desktop/IS4302/Project/TravlrBackend/node_modules/@openzeppelin/contracts/access/Roles.sol",
         "file": "../node_modules/@openzeppelin/contracts/access/Roles.sol",
-        "id": 476,
+        "id": 608,
         "nodeType": "ImportDirective",
-        "scope": 552,
-        "sourceUnit": 850,
+        "scope": 684,
+        "sourceUnit": 1041,
         "src": "25:66:3",
         "symbolAliases": [],
         "unitAlias": ""
@@ -206,10 +206,10 @@
       {
         "absolutePath": "/Users/katrina/Desktop/IS4302/Project/TravlrBackend/node_modules/@openzeppelin/contracts/ownership/Ownable.sol",
         "file": "../node_modules/@openzeppelin/contracts/ownership/Ownable.sol",
-        "id": 477,
+        "id": 609,
         "nodeType": "ImportDirective",
-        "scope": 552,
-        "sourceUnit": 968,
+        "scope": 684,
+        "sourceUnit": 1159,
         "src": "93:71:3",
         "symbolAliases": [],
         "unitAlias": ""
@@ -217,10 +217,10 @@
       {
         "absolutePath": "/Users/katrina/Desktop/IS4302/Project/TravlrBackend/contracts/Travlr.sol",
         "file": "./Travlr.sol",
-        "id": 478,
+        "id": 610,
         "nodeType": "ImportDirective",
-        "scope": 552,
-        "sourceUnit": 742,
+        "scope": 684,
+        "sourceUnit": 933,
         "src": "168:22:3",
         "symbolAliases": [],
         "unitAlias": ""
@@ -228,10 +228,10 @@
       {
         "absolutePath": "/Users/katrina/Desktop/IS4302/Project/TravlrBackend/contracts/Government.sol",
         "file": "./Government.sol",
-        "id": 479,
+        "id": 611,
         "nodeType": "ImportDirective",
-        "scope": 552,
-        "sourceUnit": 396,
+        "scope": 684,
+        "sourceUnit": 528,
         "src": "192:26:3",
         "symbolAliases": [],
         "unitAlias": ""
@@ -239,10 +239,10 @@
       {
         "absolutePath": "/Users/katrina/Desktop/IS4302/Project/TravlrBackend/contracts/EthPassport.sol",
         "file": "./EthPassport.sol",
-        "id": 480,
+        "id": 612,
         "nodeType": "ImportDirective",
-        "scope": 552,
-        "sourceUnit": 208,
+        "scope": 684,
+        "sourceUnit": 237,
         "src": "220:27:3",
         "symbolAliases": [],
         "unitAlias": ""
@@ -253,59 +253,59 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 481,
+              "id": 613,
               "name": "Ownable",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 967,
+              "referencedDeclaration": 1158,
               "src": "277:7:3",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Ownable_$967",
+                "typeIdentifier": "t_contract$_Ownable_$1158",
                 "typeString": "contract Ownable"
               }
             },
-            "id": 482,
+            "id": 614,
             "nodeType": "InheritanceSpecifier",
             "src": "277:7:3"
           }
         ],
         "contractDependencies": [
-          768,
-          967
+          959,
+          1158
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 551,
+        "id": 683,
         "linearizedBaseContracts": [
-          551,
-          967,
-          768
+          683,
+          1158,
+          959
         ],
         "name": "Immigration",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 484,
+            "id": 616,
             "name": "government",
             "nodeType": "VariableDeclaration",
-            "scope": 551,
+            "scope": 683,
             "src": "296:28:3",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_Government_$395",
+              "typeIdentifier": "t_contract$_Government_$527",
               "typeString": "contract Government"
             },
             "typeName": {
               "contractScope": null,
-              "id": 483,
+              "id": 615,
               "name": "Government",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 395,
+              "referencedDeclaration": 527,
               "src": "296:10:3",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Government_$395",
+                "typeIdentifier": "t_contract$_Government_$527",
                 "typeString": "contract Government"
               }
             },
@@ -314,10 +314,10 @@
           },
           {
             "constant": false,
-            "id": 486,
+            "id": 618,
             "name": "lat",
             "nodeType": "VariableDeclaration",
-            "scope": 551,
+            "scope": 683,
             "src": "367:11:3",
             "stateVariable": true,
             "storageLocation": "default",
@@ -326,7 +326,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 485,
+              "id": 617,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "367:7:3",
@@ -340,10 +340,10 @@
           },
           {
             "constant": false,
-            "id": 488,
+            "id": 620,
             "name": "long",
             "nodeType": "VariableDeclaration",
-            "scope": 551,
+            "scope": 683,
             "src": "383:12:3",
             "stateVariable": true,
             "storageLocation": "default",
@@ -352,7 +352,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 487,
+              "id": 619,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "383:7:3",
@@ -367,20 +367,20 @@
           {
             "anonymous": false,
             "documentation": null,
-            "id": 492,
+            "id": 624,
             "name": "logmessage",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 491,
+              "id": 623,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 490,
+                  "id": 622,
                   "indexed": false,
                   "name": "logmessage",
                   "nodeType": "VariableDeclaration",
-                  "scope": 492,
+                  "scope": 624,
                   "src": "417:17:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -389,7 +389,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 489,
+                    "id": 621,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "417:6:3",
@@ -408,28 +408,28 @@
           },
           {
             "body": {
-              "id": 502,
+              "id": 634,
               "nodeType": "Block",
               "src": "466:143:3",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 500,
+                    "id": 632,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 495,
+                      "id": 627,
                       "name": "government",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 484,
+                      "referencedDeclaration": 616,
                       "src": "571:10:3",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Government_$395",
+                        "typeIdentifier": "t_contract$_Government_$527",
                         "typeString": "contract Government"
                       }
                     },
@@ -443,18 +443,18 @@
                           "arguments": [],
                           "expression": {
                             "argumentTypes": [],
-                            "id": 497,
+                            "id": 629,
                             "name": "owner",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 890,
+                            "referencedDeclaration": 1081,
                             "src": "595:5:3",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_view$__$returns$_t_address_$",
                               "typeString": "function () view returns (address)"
                             }
                           },
-                          "id": 498,
+                          "id": 630,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -476,18 +476,18 @@
                             "typeString": "address"
                           }
                         ],
-                        "id": 496,
+                        "id": 628,
                         "name": "Government",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 395,
+                        "referencedDeclaration": 527,
                         "src": "584:10:3",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_Government_$395_$",
+                          "typeIdentifier": "t_type$_t_contract$_Government_$527_$",
                           "typeString": "type(contract Government)"
                         }
                       },
-                      "id": 499,
+                      "id": 631,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -497,42 +497,42 @@
                       "nodeType": "FunctionCall",
                       "src": "584:19:3",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Government_$395",
+                        "typeIdentifier": "t_contract$_Government_$527",
                         "typeString": "contract Government"
                       }
                     },
                     "src": "571:32:3",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Government_$395",
+                      "typeIdentifier": "t_contract$_Government_$527",
                       "typeString": "contract Government"
                     }
                   },
-                  "id": 501,
+                  "id": 633,
                   "nodeType": "ExpressionStatement",
                   "src": "571:32:3"
                 }
               ]
             },
             "documentation": null,
-            "id": 503,
+            "id": 635,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [],
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 493,
+              "id": 625,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "456:2:3"
             },
             "returnParameters": {
-              "id": 494,
+              "id": 626,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "466:0:3"
             },
-            "scope": 551,
+            "scope": 683,
             "src": "444:165:3",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -540,7 +540,7 @@
           },
           {
             "body": {
-              "id": 512,
+              "id": 644,
               "nodeType": "Block",
               "src": "675:39:3",
               "statements": [
@@ -550,14 +550,14 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 509,
+                        "id": 641,
                         "name": "government",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 484,
+                        "referencedDeclaration": 616,
                         "src": "697:10:3",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Government_$395",
+                          "typeIdentifier": "t_contract$_Government_$527",
                           "typeString": "contract Government"
                         }
                       }
@@ -565,11 +565,11 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_Government_$395",
+                          "typeIdentifier": "t_contract$_Government_$527",
                           "typeString": "contract Government"
                         }
                       ],
-                      "id": 508,
+                      "id": 640,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -582,7 +582,7 @@
                       },
                       "typeName": "address"
                     },
-                    "id": 510,
+                    "id": 642,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -596,36 +596,36 @@
                       "typeString": "address"
                     }
                   },
-                  "functionReturnParameters": 507,
-                  "id": 511,
+                  "functionReturnParameters": 639,
+                  "id": 643,
                   "nodeType": "Return",
                   "src": "682:26:3"
                 }
               ]
             },
             "documentation": null,
-            "id": 513,
+            "id": 645,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getParentAddress",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 504,
+              "id": 636,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "642:2:3"
             },
             "returnParameters": {
-              "id": 507,
+              "id": 639,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 506,
+                  "id": 638,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 513,
+                  "scope": 645,
                   "src": "666:7:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -634,7 +634,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 505,
+                    "id": 637,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "666:7:3",
@@ -650,7 +650,7 @@
               ],
               "src": "665:9:3"
             },
-            "scope": 551,
+            "scope": 683,
             "src": "617:97:3",
             "stateMutability": "view",
             "superFunction": null,
@@ -658,9 +658,9 @@
           },
           {
             "body": {
-              "id": 522,
+              "id": 654,
               "nodeType": "Block",
-              "src": "772:45:3",
+              "src": "772:43:3",
               "statements": [
                 {
                   "expression": {
@@ -670,32 +670,32 @@
                       "argumentTypes": [],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 518,
+                        "id": 650,
                         "name": "government",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 484,
-                        "src": "788:10:3",
+                        "referencedDeclaration": 616,
+                        "src": "786:10:3",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Government_$395",
+                          "typeIdentifier": "t_contract$_Government_$527",
                           "typeString": "contract Government"
                         }
                       },
-                      "id": 519,
+                      "id": 651,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "getCountry",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 386,
-                      "src": "788:21:3",
+                      "referencedDeclaration": 466,
+                      "src": "786:21:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_view$__$returns$_t_uint16_$",
                         "typeString": "function () view external returns (uint16)"
                       }
                     },
-                    "id": 520,
+                    "id": 652,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -703,42 +703,42 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "788:23:3",
+                    "src": "786:23:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint16",
                       "typeString": "uint16"
                     }
                   },
-                  "functionReturnParameters": 517,
-                  "id": 521,
+                  "functionReturnParameters": 649,
+                  "id": 653,
                   "nodeType": "Return",
-                  "src": "781:30:3"
+                  "src": "779:30:3"
                 }
               ]
             },
             "documentation": null,
-            "id": 523,
+            "id": 655,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getCountry",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 514,
+              "id": 646,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "741:2:3"
             },
             "returnParameters": {
-              "id": 517,
+              "id": 649,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 516,
+                  "id": 648,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 523,
+                  "scope": 655,
                   "src": "765:6:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -747,7 +747,7 @@
                     "typeString": "uint16"
                   },
                   "typeName": {
-                    "id": 515,
+                    "id": 647,
                     "name": "uint16",
                     "nodeType": "ElementaryTypeName",
                     "src": "765:6:3",
@@ -762,45 +762,45 @@
               ],
               "src": "764:8:3"
             },
-            "scope": 551,
-            "src": "722:95:3",
+            "scope": 683,
+            "src": "722:93:3",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 549,
+              "id": 681,
               "nodeType": "Block",
-              "src": "934:180:3",
+              "src": "933:174:3",
               "statements": [
                 {
                   "assignments": [
-                    533
+                    665
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 533,
+                      "id": 665,
                       "name": "ethPassport",
                       "nodeType": "VariableDeclaration",
-                      "scope": 549,
-                      "src": "943:23:3",
+                      "scope": 681,
+                      "src": "940:23:3",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_EthPassport_$207",
+                        "typeIdentifier": "t_contract$_EthPassport_$236",
                         "typeString": "contract EthPassport"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 532,
+                        "id": 664,
                         "name": "EthPassport",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 207,
-                        "src": "943:11:3",
+                        "referencedDeclaration": 236,
+                        "src": "940:11:3",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_EthPassport_$207",
+                          "typeIdentifier": "t_contract$_EthPassport_$236",
                           "typeString": "contract EthPassport"
                         }
                       },
@@ -808,18 +808,18 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 537,
+                  "id": 669,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 535,
+                        "id": 667,
                         "name": "_ethPassportAddress",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 525,
-                        "src": "981:19:3",
+                        "referencedDeclaration": 657,
+                        "src": "978:19:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -833,18 +833,18 @@
                           "typeString": "address"
                         }
                       ],
-                      "id": 534,
+                      "id": 666,
                       "name": "EthPassport",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 207,
-                      "src": "969:11:3",
+                      "referencedDeclaration": 236,
+                      "src": "966:11:3",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_EthPassport_$207_$",
+                        "typeIdentifier": "t_type$_t_contract$_EthPassport_$236_$",
                         "typeString": "type(contract EthPassport)"
                       }
                     },
-                    "id": 536,
+                    "id": 668,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -852,14 +852,14 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "969:32:3",
+                    "src": "966:32:3",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_EthPassport_$207",
+                      "typeIdentifier": "t_contract$_EthPassport_$236",
                       "typeString": "contract EthPassport"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "943:58:3"
+                  "src": "940:58:3"
                 },
                 {
                   "expression": {
@@ -867,70 +867,70 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 541,
+                        "id": 673,
                         "name": "_direction",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 527,
-                        "src": "1042:10:3",
+                        "referencedDeclaration": 659,
+                        "src": "1037:10:3",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_enum$_Direction_$37",
+                          "typeIdentifier": "t_enum$_Direction_$28",
                           "typeString": "enum EthPassport.Direction"
                         }
                       },
                       {
                         "argumentTypes": null,
-                        "id": 542,
+                        "id": 674,
                         "name": "_temp",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 529,
-                        "src": "1054:5:3",
+                        "referencedDeclaration": 661,
+                        "src": "1049:5:3",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_uint256",
-                          "typeString": "uint256"
+                          "typeIdentifier": "t_uint8",
+                          "typeString": "uint8"
                         }
                       }
                     ],
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_enum$_Direction_$37",
+                          "typeIdentifier": "t_enum$_Direction_$28",
                           "typeString": "enum EthPassport.Direction"
                         },
                         {
-                          "typeIdentifier": "t_uint256",
-                          "typeString": "uint256"
+                          "typeIdentifier": "t_uint8",
+                          "typeString": "uint8"
                         }
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 538,
+                        "id": 670,
                         "name": "ethPassport",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 533,
-                        "src": "1010:11:3",
+                        "referencedDeclaration": 665,
+                        "src": "1005:11:3",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_EthPassport_$207",
+                          "typeIdentifier": "t_contract$_EthPassport_$236",
                           "typeString": "contract EthPassport"
                         }
                       },
-                      "id": 540,
+                      "id": 672,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "updateTravelHistory",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 160,
-                      "src": "1010:31:3",
+                      "referencedDeclaration": 153,
+                      "src": "1005:31:3",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_external_nonpayable$_t_enum$_Direction_$37_$_t_uint256_$returns$__$",
-                        "typeString": "function (enum EthPassport.Direction,uint256) external"
+                        "typeIdentifier": "t_function_external_nonpayable$_t_enum$_Direction_$28_$_t_uint8_$returns$__$",
+                        "typeString": "function (enum EthPassport.Direction,uint8) external"
                       }
                     },
-                    "id": 543,
+                    "id": 675,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -938,15 +938,15 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1010:50:3",
+                    "src": "1005:50:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 544,
+                  "id": 676,
                   "nodeType": "ExpressionStatement",
-                  "src": "1010:50:3"
+                  "src": "1005:50:3"
                 },
                 {
                   "eventCall": {
@@ -955,14 +955,14 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "4574682050617373706f72742055706461746564",
-                        "id": 546,
+                        "id": 678,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "1085:22:3",
+                        "src": "1078:22:3",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_2dd56ec7fbc6df8623f345d6d4d30446ea42b5e9faf13bc01e98748f839aa097",
@@ -978,18 +978,18 @@
                           "typeString": "literal_string \"Eth Passport Updated\""
                         }
                       ],
-                      "id": 545,
+                      "id": 677,
                       "name": "logmessage",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 492,
-                      "src": "1074:10:3",
+                      "referencedDeclaration": 624,
+                      "src": "1067:10:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (string memory)"
                       }
                     },
-                    "id": 547,
+                    "id": 679,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -997,36 +997,36 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1074:34:3",
+                    "src": "1067:34:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 548,
+                  "id": 680,
                   "nodeType": "EmitStatement",
-                  "src": "1069:39:3"
+                  "src": "1062:39:3"
                 }
               ]
             },
             "documentation": null,
-            "id": 550,
+            "id": 682,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "updateEthPassport",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 530,
+              "id": 662,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 525,
+                  "id": 657,
                   "name": "_ethPassportAddress",
                   "nodeType": "VariableDeclaration",
-                  "scope": 550,
-                  "src": "852:27:3",
+                  "scope": 682,
+                  "src": "850:27:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1034,10 +1034,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 524,
+                    "id": 656,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "852:7:3",
+                    "src": "850:7:3",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -1049,26 +1049,26 @@
                 },
                 {
                   "constant": false,
-                  "id": 527,
+                  "id": 659,
                   "name": "_direction",
                   "nodeType": "VariableDeclaration",
-                  "scope": 550,
-                  "src": "881:32:3",
+                  "scope": 682,
+                  "src": "879:32:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_enum$_Direction_$37",
+                    "typeIdentifier": "t_enum$_Direction_$28",
                     "typeString": "enum EthPassport.Direction"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 526,
+                    "id": 658,
                     "name": "EthPassport.Direction",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 37,
-                    "src": "881:21:3",
+                    "referencedDeclaration": 28,
+                    "src": "879:21:3",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_enum$_Direction_$37",
+                      "typeIdentifier": "t_enum$_Direction_$28",
                       "typeString": "enum EthPassport.Direction"
                     }
                   },
@@ -1077,64 +1077,64 @@
                 },
                 {
                   "constant": false,
-                  "id": 529,
+                  "id": 661,
                   "name": "_temp",
                   "nodeType": "VariableDeclaration",
-                  "scope": 550,
-                  "src": "915:10:3",
+                  "scope": 682,
+                  "src": "913:11:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
                   },
                   "typeName": {
-                    "id": 528,
-                    "name": "uint",
+                    "id": 660,
+                    "name": "uint8",
                     "nodeType": "ElementaryTypeName",
-                    "src": "915:4:3",
+                    "src": "913:5:3",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
                     }
                   },
                   "value": null,
                   "visibility": "internal"
                 }
               ],
-              "src": "851:75:3"
+              "src": "849:76:3"
             },
             "returnParameters": {
-              "id": 531,
+              "id": 663,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "934:0:3"
+              "src": "933:0:3"
             },
-            "scope": 551,
-            "src": "825:289:3",
+            "scope": 683,
+            "src": "823:284:3",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 552,
-        "src": "253:864:3"
+        "scope": 684,
+        "src": "253:857:3"
       }
     ],
-    "src": "0:1117:3"
+    "src": "0:1110:3"
   },
   "legacyAST": {
     "absolutePath": "/Users/katrina/Desktop/IS4302/Project/TravlrBackend/contracts/Immigration.sol",
     "exportedSymbols": {
       "Immigration": [
-        551
+        683
       ]
     },
-    "id": 552,
+    "id": 684,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 475,
+        "id": 607,
         "literals": [
           "solidity",
           "^",
@@ -1147,10 +1147,10 @@
       {
         "absolutePath": "/Users/katrina/Desktop/IS4302/Project/TravlrBackend/node_modules/@openzeppelin/contracts/access/Roles.sol",
         "file": "../node_modules/@openzeppelin/contracts/access/Roles.sol",
-        "id": 476,
+        "id": 608,
         "nodeType": "ImportDirective",
-        "scope": 552,
-        "sourceUnit": 850,
+        "scope": 684,
+        "sourceUnit": 1041,
         "src": "25:66:3",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1158,10 +1158,10 @@
       {
         "absolutePath": "/Users/katrina/Desktop/IS4302/Project/TravlrBackend/node_modules/@openzeppelin/contracts/ownership/Ownable.sol",
         "file": "../node_modules/@openzeppelin/contracts/ownership/Ownable.sol",
-        "id": 477,
+        "id": 609,
         "nodeType": "ImportDirective",
-        "scope": 552,
-        "sourceUnit": 968,
+        "scope": 684,
+        "sourceUnit": 1159,
         "src": "93:71:3",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1169,10 +1169,10 @@
       {
         "absolutePath": "/Users/katrina/Desktop/IS4302/Project/TravlrBackend/contracts/Travlr.sol",
         "file": "./Travlr.sol",
-        "id": 478,
+        "id": 610,
         "nodeType": "ImportDirective",
-        "scope": 552,
-        "sourceUnit": 742,
+        "scope": 684,
+        "sourceUnit": 933,
         "src": "168:22:3",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1180,10 +1180,10 @@
       {
         "absolutePath": "/Users/katrina/Desktop/IS4302/Project/TravlrBackend/contracts/Government.sol",
         "file": "./Government.sol",
-        "id": 479,
+        "id": 611,
         "nodeType": "ImportDirective",
-        "scope": 552,
-        "sourceUnit": 396,
+        "scope": 684,
+        "sourceUnit": 528,
         "src": "192:26:3",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1191,10 +1191,10 @@
       {
         "absolutePath": "/Users/katrina/Desktop/IS4302/Project/TravlrBackend/contracts/EthPassport.sol",
         "file": "./EthPassport.sol",
-        "id": 480,
+        "id": 612,
         "nodeType": "ImportDirective",
-        "scope": 552,
-        "sourceUnit": 208,
+        "scope": 684,
+        "sourceUnit": 237,
         "src": "220:27:3",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1205,59 +1205,59 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 481,
+              "id": 613,
               "name": "Ownable",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 967,
+              "referencedDeclaration": 1158,
               "src": "277:7:3",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Ownable_$967",
+                "typeIdentifier": "t_contract$_Ownable_$1158",
                 "typeString": "contract Ownable"
               }
             },
-            "id": 482,
+            "id": 614,
             "nodeType": "InheritanceSpecifier",
             "src": "277:7:3"
           }
         ],
         "contractDependencies": [
-          768,
-          967
+          959,
+          1158
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 551,
+        "id": 683,
         "linearizedBaseContracts": [
-          551,
-          967,
-          768
+          683,
+          1158,
+          959
         ],
         "name": "Immigration",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 484,
+            "id": 616,
             "name": "government",
             "nodeType": "VariableDeclaration",
-            "scope": 551,
+            "scope": 683,
             "src": "296:28:3",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_Government_$395",
+              "typeIdentifier": "t_contract$_Government_$527",
               "typeString": "contract Government"
             },
             "typeName": {
               "contractScope": null,
-              "id": 483,
+              "id": 615,
               "name": "Government",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 395,
+              "referencedDeclaration": 527,
               "src": "296:10:3",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Government_$395",
+                "typeIdentifier": "t_contract$_Government_$527",
                 "typeString": "contract Government"
               }
             },
@@ -1266,10 +1266,10 @@
           },
           {
             "constant": false,
-            "id": 486,
+            "id": 618,
             "name": "lat",
             "nodeType": "VariableDeclaration",
-            "scope": 551,
+            "scope": 683,
             "src": "367:11:3",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1278,7 +1278,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 485,
+              "id": 617,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "367:7:3",
@@ -1292,10 +1292,10 @@
           },
           {
             "constant": false,
-            "id": 488,
+            "id": 620,
             "name": "long",
             "nodeType": "VariableDeclaration",
-            "scope": 551,
+            "scope": 683,
             "src": "383:12:3",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1304,7 +1304,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 487,
+              "id": 619,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "383:7:3",
@@ -1319,20 +1319,20 @@
           {
             "anonymous": false,
             "documentation": null,
-            "id": 492,
+            "id": 624,
             "name": "logmessage",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 491,
+              "id": 623,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 490,
+                  "id": 622,
                   "indexed": false,
                   "name": "logmessage",
                   "nodeType": "VariableDeclaration",
-                  "scope": 492,
+                  "scope": 624,
                   "src": "417:17:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1341,7 +1341,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 489,
+                    "id": 621,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "417:6:3",
@@ -1360,28 +1360,28 @@
           },
           {
             "body": {
-              "id": 502,
+              "id": 634,
               "nodeType": "Block",
               "src": "466:143:3",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 500,
+                    "id": 632,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 495,
+                      "id": 627,
                       "name": "government",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 484,
+                      "referencedDeclaration": 616,
                       "src": "571:10:3",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Government_$395",
+                        "typeIdentifier": "t_contract$_Government_$527",
                         "typeString": "contract Government"
                       }
                     },
@@ -1395,18 +1395,18 @@
                           "arguments": [],
                           "expression": {
                             "argumentTypes": [],
-                            "id": 497,
+                            "id": 629,
                             "name": "owner",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 890,
+                            "referencedDeclaration": 1081,
                             "src": "595:5:3",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_view$__$returns$_t_address_$",
                               "typeString": "function () view returns (address)"
                             }
                           },
-                          "id": 498,
+                          "id": 630,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -1428,18 +1428,18 @@
                             "typeString": "address"
                           }
                         ],
-                        "id": 496,
+                        "id": 628,
                         "name": "Government",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 395,
+                        "referencedDeclaration": 527,
                         "src": "584:10:3",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_Government_$395_$",
+                          "typeIdentifier": "t_type$_t_contract$_Government_$527_$",
                           "typeString": "type(contract Government)"
                         }
                       },
-                      "id": 499,
+                      "id": 631,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1449,42 +1449,42 @@
                       "nodeType": "FunctionCall",
                       "src": "584:19:3",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Government_$395",
+                        "typeIdentifier": "t_contract$_Government_$527",
                         "typeString": "contract Government"
                       }
                     },
                     "src": "571:32:3",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Government_$395",
+                      "typeIdentifier": "t_contract$_Government_$527",
                       "typeString": "contract Government"
                     }
                   },
-                  "id": 501,
+                  "id": 633,
                   "nodeType": "ExpressionStatement",
                   "src": "571:32:3"
                 }
               ]
             },
             "documentation": null,
-            "id": 503,
+            "id": 635,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [],
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 493,
+              "id": 625,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "456:2:3"
             },
             "returnParameters": {
-              "id": 494,
+              "id": 626,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "466:0:3"
             },
-            "scope": 551,
+            "scope": 683,
             "src": "444:165:3",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -1492,7 +1492,7 @@
           },
           {
             "body": {
-              "id": 512,
+              "id": 644,
               "nodeType": "Block",
               "src": "675:39:3",
               "statements": [
@@ -1502,14 +1502,14 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 509,
+                        "id": 641,
                         "name": "government",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 484,
+                        "referencedDeclaration": 616,
                         "src": "697:10:3",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Government_$395",
+                          "typeIdentifier": "t_contract$_Government_$527",
                           "typeString": "contract Government"
                         }
                       }
@@ -1517,11 +1517,11 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_Government_$395",
+                          "typeIdentifier": "t_contract$_Government_$527",
                           "typeString": "contract Government"
                         }
                       ],
-                      "id": 508,
+                      "id": 640,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -1534,7 +1534,7 @@
                       },
                       "typeName": "address"
                     },
-                    "id": 510,
+                    "id": 642,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1548,36 +1548,36 @@
                       "typeString": "address"
                     }
                   },
-                  "functionReturnParameters": 507,
-                  "id": 511,
+                  "functionReturnParameters": 639,
+                  "id": 643,
                   "nodeType": "Return",
                   "src": "682:26:3"
                 }
               ]
             },
             "documentation": null,
-            "id": 513,
+            "id": 645,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getParentAddress",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 504,
+              "id": 636,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "642:2:3"
             },
             "returnParameters": {
-              "id": 507,
+              "id": 639,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 506,
+                  "id": 638,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 513,
+                  "scope": 645,
                   "src": "666:7:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1586,7 +1586,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 505,
+                    "id": 637,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "666:7:3",
@@ -1602,7 +1602,7 @@
               ],
               "src": "665:9:3"
             },
-            "scope": 551,
+            "scope": 683,
             "src": "617:97:3",
             "stateMutability": "view",
             "superFunction": null,
@@ -1610,9 +1610,9 @@
           },
           {
             "body": {
-              "id": 522,
+              "id": 654,
               "nodeType": "Block",
-              "src": "772:45:3",
+              "src": "772:43:3",
               "statements": [
                 {
                   "expression": {
@@ -1622,32 +1622,32 @@
                       "argumentTypes": [],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 518,
+                        "id": 650,
                         "name": "government",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 484,
-                        "src": "788:10:3",
+                        "referencedDeclaration": 616,
+                        "src": "786:10:3",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Government_$395",
+                          "typeIdentifier": "t_contract$_Government_$527",
                           "typeString": "contract Government"
                         }
                       },
-                      "id": 519,
+                      "id": 651,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "getCountry",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 386,
-                      "src": "788:21:3",
+                      "referencedDeclaration": 466,
+                      "src": "786:21:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_view$__$returns$_t_uint16_$",
                         "typeString": "function () view external returns (uint16)"
                       }
                     },
-                    "id": 520,
+                    "id": 652,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1655,42 +1655,42 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "788:23:3",
+                    "src": "786:23:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint16",
                       "typeString": "uint16"
                     }
                   },
-                  "functionReturnParameters": 517,
-                  "id": 521,
+                  "functionReturnParameters": 649,
+                  "id": 653,
                   "nodeType": "Return",
-                  "src": "781:30:3"
+                  "src": "779:30:3"
                 }
               ]
             },
             "documentation": null,
-            "id": 523,
+            "id": 655,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getCountry",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 514,
+              "id": 646,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "741:2:3"
             },
             "returnParameters": {
-              "id": 517,
+              "id": 649,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 516,
+                  "id": 648,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 523,
+                  "scope": 655,
                   "src": "765:6:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1699,7 +1699,7 @@
                     "typeString": "uint16"
                   },
                   "typeName": {
-                    "id": 515,
+                    "id": 647,
                     "name": "uint16",
                     "nodeType": "ElementaryTypeName",
                     "src": "765:6:3",
@@ -1714,45 +1714,45 @@
               ],
               "src": "764:8:3"
             },
-            "scope": 551,
-            "src": "722:95:3",
+            "scope": 683,
+            "src": "722:93:3",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 549,
+              "id": 681,
               "nodeType": "Block",
-              "src": "934:180:3",
+              "src": "933:174:3",
               "statements": [
                 {
                   "assignments": [
-                    533
+                    665
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 533,
+                      "id": 665,
                       "name": "ethPassport",
                       "nodeType": "VariableDeclaration",
-                      "scope": 549,
-                      "src": "943:23:3",
+                      "scope": 681,
+                      "src": "940:23:3",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_EthPassport_$207",
+                        "typeIdentifier": "t_contract$_EthPassport_$236",
                         "typeString": "contract EthPassport"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 532,
+                        "id": 664,
                         "name": "EthPassport",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 207,
-                        "src": "943:11:3",
+                        "referencedDeclaration": 236,
+                        "src": "940:11:3",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_EthPassport_$207",
+                          "typeIdentifier": "t_contract$_EthPassport_$236",
                           "typeString": "contract EthPassport"
                         }
                       },
@@ -1760,18 +1760,18 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 537,
+                  "id": 669,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 535,
+                        "id": 667,
                         "name": "_ethPassportAddress",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 525,
-                        "src": "981:19:3",
+                        "referencedDeclaration": 657,
+                        "src": "978:19:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -1785,18 +1785,18 @@
                           "typeString": "address"
                         }
                       ],
-                      "id": 534,
+                      "id": 666,
                       "name": "EthPassport",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 207,
-                      "src": "969:11:3",
+                      "referencedDeclaration": 236,
+                      "src": "966:11:3",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_EthPassport_$207_$",
+                        "typeIdentifier": "t_type$_t_contract$_EthPassport_$236_$",
                         "typeString": "type(contract EthPassport)"
                       }
                     },
-                    "id": 536,
+                    "id": 668,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1804,14 +1804,14 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "969:32:3",
+                    "src": "966:32:3",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_EthPassport_$207",
+                      "typeIdentifier": "t_contract$_EthPassport_$236",
                       "typeString": "contract EthPassport"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "943:58:3"
+                  "src": "940:58:3"
                 },
                 {
                   "expression": {
@@ -1819,70 +1819,70 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 541,
+                        "id": 673,
                         "name": "_direction",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 527,
-                        "src": "1042:10:3",
+                        "referencedDeclaration": 659,
+                        "src": "1037:10:3",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_enum$_Direction_$37",
+                          "typeIdentifier": "t_enum$_Direction_$28",
                           "typeString": "enum EthPassport.Direction"
                         }
                       },
                       {
                         "argumentTypes": null,
-                        "id": 542,
+                        "id": 674,
                         "name": "_temp",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 529,
-                        "src": "1054:5:3",
+                        "referencedDeclaration": 661,
+                        "src": "1049:5:3",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_uint256",
-                          "typeString": "uint256"
+                          "typeIdentifier": "t_uint8",
+                          "typeString": "uint8"
                         }
                       }
                     ],
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_enum$_Direction_$37",
+                          "typeIdentifier": "t_enum$_Direction_$28",
                           "typeString": "enum EthPassport.Direction"
                         },
                         {
-                          "typeIdentifier": "t_uint256",
-                          "typeString": "uint256"
+                          "typeIdentifier": "t_uint8",
+                          "typeString": "uint8"
                         }
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 538,
+                        "id": 670,
                         "name": "ethPassport",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 533,
-                        "src": "1010:11:3",
+                        "referencedDeclaration": 665,
+                        "src": "1005:11:3",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_EthPassport_$207",
+                          "typeIdentifier": "t_contract$_EthPassport_$236",
                           "typeString": "contract EthPassport"
                         }
                       },
-                      "id": 540,
+                      "id": 672,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "updateTravelHistory",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 160,
-                      "src": "1010:31:3",
+                      "referencedDeclaration": 153,
+                      "src": "1005:31:3",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_external_nonpayable$_t_enum$_Direction_$37_$_t_uint256_$returns$__$",
-                        "typeString": "function (enum EthPassport.Direction,uint256) external"
+                        "typeIdentifier": "t_function_external_nonpayable$_t_enum$_Direction_$28_$_t_uint8_$returns$__$",
+                        "typeString": "function (enum EthPassport.Direction,uint8) external"
                       }
                     },
-                    "id": 543,
+                    "id": 675,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1890,15 +1890,15 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1010:50:3",
+                    "src": "1005:50:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 544,
+                  "id": 676,
                   "nodeType": "ExpressionStatement",
-                  "src": "1010:50:3"
+                  "src": "1005:50:3"
                 },
                 {
                   "eventCall": {
@@ -1907,14 +1907,14 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "4574682050617373706f72742055706461746564",
-                        "id": 546,
+                        "id": 678,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "1085:22:3",
+                        "src": "1078:22:3",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_2dd56ec7fbc6df8623f345d6d4d30446ea42b5e9faf13bc01e98748f839aa097",
@@ -1930,18 +1930,18 @@
                           "typeString": "literal_string \"Eth Passport Updated\""
                         }
                       ],
-                      "id": 545,
+                      "id": 677,
                       "name": "logmessage",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 492,
-                      "src": "1074:10:3",
+                      "referencedDeclaration": 624,
+                      "src": "1067:10:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (string memory)"
                       }
                     },
-                    "id": 547,
+                    "id": 679,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1949,36 +1949,36 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1074:34:3",
+                    "src": "1067:34:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 548,
+                  "id": 680,
                   "nodeType": "EmitStatement",
-                  "src": "1069:39:3"
+                  "src": "1062:39:3"
                 }
               ]
             },
             "documentation": null,
-            "id": 550,
+            "id": 682,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "updateEthPassport",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 530,
+              "id": 662,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 525,
+                  "id": 657,
                   "name": "_ethPassportAddress",
                   "nodeType": "VariableDeclaration",
-                  "scope": 550,
-                  "src": "852:27:3",
+                  "scope": 682,
+                  "src": "850:27:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1986,10 +1986,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 524,
+                    "id": 656,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "852:7:3",
+                    "src": "850:7:3",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -2001,26 +2001,26 @@
                 },
                 {
                   "constant": false,
-                  "id": 527,
+                  "id": 659,
                   "name": "_direction",
                   "nodeType": "VariableDeclaration",
-                  "scope": 550,
-                  "src": "881:32:3",
+                  "scope": 682,
+                  "src": "879:32:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_enum$_Direction_$37",
+                    "typeIdentifier": "t_enum$_Direction_$28",
                     "typeString": "enum EthPassport.Direction"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 526,
+                    "id": 658,
                     "name": "EthPassport.Direction",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 37,
-                    "src": "881:21:3",
+                    "referencedDeclaration": 28,
+                    "src": "879:21:3",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_enum$_Direction_$37",
+                      "typeIdentifier": "t_enum$_Direction_$28",
                       "typeString": "enum EthPassport.Direction"
                     }
                   },
@@ -2029,51 +2029,51 @@
                 },
                 {
                   "constant": false,
-                  "id": 529,
+                  "id": 661,
                   "name": "_temp",
                   "nodeType": "VariableDeclaration",
-                  "scope": 550,
-                  "src": "915:10:3",
+                  "scope": 682,
+                  "src": "913:11:3",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
                   },
                   "typeName": {
-                    "id": 528,
-                    "name": "uint",
+                    "id": 660,
+                    "name": "uint8",
                     "nodeType": "ElementaryTypeName",
-                    "src": "915:4:3",
+                    "src": "913:5:3",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
                     }
                   },
                   "value": null,
                   "visibility": "internal"
                 }
               ],
-              "src": "851:75:3"
+              "src": "849:76:3"
             },
             "returnParameters": {
-              "id": 531,
+              "id": 663,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "934:0:3"
+              "src": "933:0:3"
             },
-            "scope": 551,
-            "src": "825:289:3",
+            "scope": 683,
+            "src": "823:284:3",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 552,
-        "src": "253:864:3"
+        "scope": 684,
+        "src": "253:857:3"
       }
     ],
-    "src": "0:1117:3"
+    "src": "0:1110:3"
   },
   "compiler": {
     "name": "solc",
@@ -2108,7 +2108,7 @@
     }
   },
   "schemaVersion": "3.0.23",
-  "updatedAt": "2020-04-07T12:45:16.449Z",
+  "updatedAt": "2020-04-07T13:13:13.810Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {

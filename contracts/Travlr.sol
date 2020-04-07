@@ -10,12 +10,14 @@ contract Travlr is Ownable {
   Roles.Role internal _ethPassport;
   Roles.Role internal _immigration;
   Roles.Role internal _hotel;
+  uint16 public check;
   
   event log(address logaddress);
   
   address travlrOwner;
   constructor() public {
       travlrOwner = msg.sender;
+      check = 1;
   }
 
   function assignGovernment(address _govtOwnerAddress, uint16 _country ) public onlyOwner returns (address) {
@@ -44,6 +46,10 @@ contract Travlr is Ownable {
   function addHotel(address _hotelAddress) public onlyGovernment {
     _hotel.add(_hotelAddress);
   }
+  
+  function checkVal() public view returns (uint16){ 
+      return check; 
+  } 
   
   function governmentHasRole(address _addressToCheck) public view returns (bool){
       return _government.has(_addressToCheck);

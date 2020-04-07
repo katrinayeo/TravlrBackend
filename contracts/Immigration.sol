@@ -25,12 +25,12 @@ contract Immigration is Ownable {
   }
   
   function getCountry() public view returns (uint16){
-      return government.getCountry();
+    return government.getCountry();
   }
   
-  function updateEthPassport(address _ethPassportAddress, EthPassport.Direction _direction, uint _temp) public {
-      EthPassport ethPassport = EthPassport(_ethPassportAddress);
-      ethPassport.updateTravelHistory(_direction, _temp);
-      emit logmessage("Eth Passport Updated");
+  function updateEthPassport(address _ethPassportAddress, EthPassport.Direction _direction, uint8 _temp) public {
+    EthPassport ethPassport = EthPassport(_ethPassportAddress);
+    ethPassport.updateTravelHistory(_direction, _temp);
+    emit logmessage("Eth Passport Updated");
   }
 }

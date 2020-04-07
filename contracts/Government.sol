@@ -54,6 +54,16 @@ contract Government is Ownable {
     return address(immigration); //returns immigration contract address
   }
   
+  function getTravelHistoryWithId(address _ethPassportAddress, uint _id) public onlyOwner returns (uint,uint,EthPassport.Direction,uint,address){
+    EthPassport ethPassport = EthPassport(_ethPassportAddress);
+    return ethPassport.getTravelHistoryWithId(_id);
+  }
+  
+  function getHeadId(address _ethPassportAddress) public onlyOwner view returns (uint) {
+    EthPassport ethPassport = EthPassport(_ethPassportAddress);
+    return ethPassport.getHeadId();
+  }
+  
   //getters
   function getParentAddress() public view returns (address) {
     return address(travlr);
@@ -64,6 +74,23 @@ contract Government is Ownable {
   }
   
   function getGovernmentOwner() public view returns (address) {
-      return governmentOwner;
+    return governmentOwner;
   }
+  
+  function ethPassportHasRole(address _addressToCheck) public view returns (bool){
+    return travlr.ethPassportHasRole(_addressToCheck);
+  }
+  
+  function hotelHasRole(address _addressToCheck) public view returns (bool){
+    return travlr.hotelHasRole(_addressToCheck);
+  }
+  
+  function immigrationHasRole(address _addressToCheck) public view returns (bool){
+    return travlr.immigrationHasRole(_addressToCheck);
+  }
+  
+  function governmentHasRole(address _addressToCheck) public view returns (bool){
+    return travlr.governmentHasRole(_addressToCheck);
+  }
+
 }

@@ -5,10 +5,6 @@ import "./Travlr.sol";
 import "./Government.sol";
 
 contract EthPassport is Ownable {
-  using Roles for Roles.Role;
-  Roles.Role internal _government;
-  Roles.Role internal _immigration;
-  Roles.Role internal _hotel;
     
   Government public government; //eth address assigned to passport
   bool healthy;
@@ -25,14 +21,14 @@ contract EthPassport is Ownable {
     uint next; //next node in linked list
     uint timestamp;
     Direction direction;
-    uint temp;
+    uint8 temp;
     address updatedBy;
   }
   
-  uint public head;
+  uint public head; //latest record
   uint id = 0;
   mapping (uint => TravelHistory) public travelHistories;
-  event EPUpdateTravelHistory(uint head, Direction direction, uint temp, address updatedBy, uint next);
+  event EPUpdateTravelHistory(uint head, Direction direction, uint8 temp, address updatedBy, uint next);
 
   function getParentAddress() public view returns (address) {
     return address(government);
@@ -53,31 +49,29 @@ contract EthPassport is Ownable {
       }
   }
   
-  function updateTravelHistory(Direction _direction, uint _temp) public { //TODO: immigration or hotel only
+  function updateTravelHistory(Direction _direction, uint8 _temp) onlyImmigrationOrHotel public { 
     TravelHistory memory travelHistory = TravelHistory(head,now,_direction,_temp, msg.sender);
     travelHistories[id] = travelHistory;
     head = id++;
     emit EPUpdateTravelHistory(head,travelHistory.direction, travelHistory.temp, travelHistory.updatedBy, travelHistory.next);
   }
   
-  function getTravelHistoryWithId(uint _id) public returns (uint,uint,Direction,uint,address){ //TODO: govt only
+  function getTravelHistoryWithId(uint _id) public onlyGovernment returns (uint,uint,Direction,uint,address){
     return (travelHistories[_id].next,travelHistories[_id].timestamp,travelHistories[_id].direction,travelHistories[_id].temp, travelHistories[_id].updatedBy);
   }
 
-  
-  function getHeadId() public view returns (uint) { //TODO: govt only
+  function getHeadId() public onlyGovernment view returns (uint) {
     return head;
   }
   
-  // has error
-  // modifier onlyImmigrationOrHotel(){
-  //     require(_immigration.has(msg.sender)||_hotel.has(msg.sender), "Requires Immigration or Hotel Role");
-  //     _;
-  // }
+  modifier onlyImmigrationOrHotel(){
+      require(government.hotelHasRole(msg.sender)||government.immigrationHasRole(msg.sender), "Requires Immigration or Hotel Role");
+      _;
+  }
   
-  //   modifier onlyGovernment() {
-  //     require(_government.has(msg.sender),"Requires Government Role");
-  //     _;
-  // }
+  modifier onlyGovernment() {
+      require(government.governmentHasRole(msg.sender),"Requires Government Role");
+      _;
+  }
   
 }

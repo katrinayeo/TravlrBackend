@@ -6,10 +6,10 @@ const Travlr = artifacts.require("Travlr");
 
 module.exports = function(deployer, network, accounts) {
   let travlrInstance;
-  let governmentInstance;
-  let ethPassportInstance;
-  let immigrationInstance;
-  let hotelInstance;
+  // let governmentInstance;
+  // let ethPassportInstance;
+  // let immigrationInstance;
+  // let hotelInstance;
 
   return deployer
     .then(() => {

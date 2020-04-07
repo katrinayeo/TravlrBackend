@@ -10,12 +10,12 @@ contract Travlr is Ownable {
   Roles.Role internal _ethPassport;
   Roles.Role internal _immigration;
   Roles.Role internal _hotel;
-  uint16 public check;
   
   event log(address logaddress);
-
+  
+  address travlrOwner;
   constructor() public {
-    check = 1;
+      travlrOwner = msg.sender;
   }
 
   function assignGovernment(address _govtOwnerAddress, uint16 _country ) public onlyOwner returns (address) {
@@ -28,7 +28,6 @@ contract Travlr is Ownable {
     //returns government contract address
     return address(government);
   }
-  
   
   function addEthPassportRole(address _ethPassportAddress) public onlyGovernment {
     _ethPassport.add(_ethPassportAddress);
@@ -46,17 +45,24 @@ contract Travlr is Ownable {
     _hotel.add(_hotelAddress);
   }
   
-  function checkVal() public view returns (uint16){
-      return check;
+  function governmentHasRole(address _addressToCheck) public view returns (bool){
+      return _government.has(_addressToCheck);
+  }
+  
+  function ethPassportHasRole(address _addressToCheck) public view returns (bool){
+      return _ethPassport.has(_addressToCheck);
+  }
+  
+  function hotelHasRole(address _addressToCheck) public view returns (bool){
+      return _hotel.has(_addressToCheck);
+  }
+  
+  function immigrationHasRole(address _addressToCheck) public view returns (bool){
+      return _immigration.has(_addressToCheck);
   }
   
   modifier onlyGovernment() {
       require(_government.has(msg.sender),"Requires Government Role");
       _;
   }
-  
-//   function getGovtCountry(Government gv1) public view returns (uint16){
-//      return gv1.getCountry();
-//   }
-
 }
